@@ -1,0 +1,71 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="ASP.NET.master.cs" Inherits="Thicuoiky.ASP_NET" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 255px;
+        }
+        .auto-style2 {
+            width: 255px;
+            height: 500px;
+        }
+        .auto-style3 {
+            width: 70%;
+            height: 500px;
+        }
+        .auto-style4 {
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+        <link href="Css/baithi.css" rel="stylesheet" />
+    <form id="form1" runat="server">
+   <table style="width:1000px">
+        <tr class="row-1">
+            <td style="border:none;" class="auto-style1">
+                <div>
+                    <img src="images/logo.png" class="image"/> 
+                </div>
+                
+            </td>
+            <td>
+                <div style="font-size:20px; color:#ff0000;">
+                     &nbsp;TRƯỜNG CAO ĐẲNG
+                     <br />
+&nbsp;CÔNG THƯƠNG VIỆT NAM<br />
+                    <br />
+&nbsp;"Đào tạo những gì doanh nghiệp cần"
+                </div>
+            </td>
+        </tr>
+        <tr class="row-2">
+            <td class="auto-style2">
+                <div>
+                    <asp:HyperLink runat="server" NavigateUrl="~/Dangkythongtin.aspx">Đăng ký thông tin</asp:HyperLink><br />
+                    <br />
+                    <asp:HyperLink runat="server" NavigateUrl="~/Capnhattruonghoc.aspx">Cập nhật trường học</asp:HyperLink><br />
+
+                </div>
+            </td>
+            <td class="auto-style3">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+        <tr class="row-3">
+            <td colspan="3" class="auto-style4">
+                Họ và tên: Lừu Văn Quý&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lớp: CCN04.6B<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Đề thi số 01&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Số báo danh:CCN6B13</td>
+        </tr>
+    </table>
+
+</form>
+</body>
+</html>
